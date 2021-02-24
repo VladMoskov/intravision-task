@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import s from './TasksTable.module.css';
 import axios from "axios";
 
@@ -12,13 +12,11 @@ const SingleTask = (props) => {
 
 
 const TasksTable = (props) => {
-debugger
-    let [tasks, setTasks] = useState([]);
 
     useEffect(() => {
         axios.get('http://intravision-task.test01.intravision.ru/odata/tasks?tenantguid=f820a790-7c19-4f17-8856-f26836eb9a41')
             .then(res => {
-                setTasks([res.value])
+                props.setTasks([res.value])
             })
     }, [])
 
@@ -32,7 +30,7 @@ debugger
             </div>
 
             <div className={s.taskItemsList}>
-                {tasks.length !== 0 ? tasks.map(task => <SingleTask key={task.id} name={task.name}/>): 'request'}
+                {props.tasks.length !== 0 ? props.tasks.map(task => <SingleTask key={task.id} name={task.name}/>): 'request'}
             </div>
 
         </div>
