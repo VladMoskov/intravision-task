@@ -5,7 +5,7 @@ import TasksListPage from "../TasksListPage/TasksListPage";
 const Content = (props) => {
     return (
         <div className='content'>
-            <Route path={'/tasks'} render={TasksListPage}/>
+            <Route path={'/tasks'} render={()=> <TasksListPage/> }/>
         </div>
     )
 }

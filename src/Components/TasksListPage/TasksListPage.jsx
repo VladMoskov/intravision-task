@@ -4,13 +4,11 @@ import TasksTable from "./TaskTable/TasksTable";
 
 const TasksListPage = (props) => {
 
-    let [tasks, setTasks] = useState([]);
-
     return (
         <div className={s.wrapper}>
             <button className={s.createButton}><h3 className={s.buttonTitle}>Создать заявку</h3></button>
 
-            <TasksTable tasks={tasks} setTasks={setTasks}/>
+            <TasksTable/>
         </div>
     )
 }

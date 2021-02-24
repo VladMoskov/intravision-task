@@ -23,9 +23,26 @@
     display: grid;
 }
 
-.tast {
+.task {
     height: 50px;
     width: 100%;
     border-bottom: 1px solid #dae0e7;
     border-top: 1px solid #dae0e7;
+
+    display: grid;
+    grid-template-columns: 52px 114px 419px 125px 155px;
+}
+
+.priority {
+    margin: 5px;
+    width: 5px;
+}
+
+.task h1 {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #525460;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
 }
