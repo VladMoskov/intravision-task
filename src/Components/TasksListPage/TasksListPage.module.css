@@ -1,0 +1,17 @@
+.createButton {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #008cf0;
+    border: none;
+    margin-left: 259px;
+    margin-top: 24px;
+}
+
+.buttonTitle {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+}

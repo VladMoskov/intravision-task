@@ -1,0 +1,30 @@
+.findForm {
+    width: 680px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 1px solid #a9b2c9;
+    padding-left: 20px;
+}
+
+.findFormButton{
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+    margin-left: -53px;
+}
+
+::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #c0cbda;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+
+::-moz-placeholder{
+    font-size: 16px;
+    color: #c0cbda;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}

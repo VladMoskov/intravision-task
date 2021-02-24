@@ -1,0 +1,18 @@
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    font-size: 18px;
+    letter-spacing: 0;
+    color: #23282b;
+    font-weight: 400;
+    font-family: "Ubuntu", sans-serif;
+    text-align: right;
+}
+
+.avatar {
+    clip-path: circle(45%);
+    margin-left: 8px;
+}
