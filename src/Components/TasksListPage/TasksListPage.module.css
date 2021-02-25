@@ -6,6 +6,9 @@
     border: none;
     margin-left: 259px;
     margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .buttonTitle {

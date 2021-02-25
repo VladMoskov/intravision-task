@@ -1,12 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import s from './TasksTable.module.css';
 import {tasksAPI} from "../../../API/api";
+import Status from "./Status/Status";
+import Preloader from "../../Common/Preloader";
 
 const SingleTask = (props) => {
 
     let priorityColor;
 
-    switch (props.priorityName) {
+    switch (props.task.priorityName) {
         case 'Средний':
             priorityColor = '#b32c55';
             break;
@@ -23,8 +25,10 @@ const SingleTask = (props) => {
     return (
         <div className={s.task}>
             <div className={s.priority} style={{backgroundColor: priorityColor}}/>
-            <h1>{props.id}</h1>
-            <h1>{props.name}</h1>
+            <h1>{props.task.id.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')}</h1>
+            <h1>{props.task.name}</h1>
+            <Status status={props.task.statusName}/>
+            <h1>{props.task.executorName}</h1>
         </div>
     )
 }
@@ -52,9 +56,7 @@ const TasksTable = (props) => {
 
             <div className={s.taskItemsList}>
                 {tasks ? tasks.map(task => <SingleTask key={task.id}
-                                                       id={task.id}
-                                                       name={task.name}
-                                                       priorityName={task.priorityName}/>) : 'request'}
+                                                       task={task}/>) : <Preloader/>}
             </div>
 
         </div>
