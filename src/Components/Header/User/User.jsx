@@ -6,7 +6,7 @@ const User = (props) => {
     return (
             <div className={s.user}>
                 <h5 className={s.name}>Менеджеров Сергей</h5>
-                <img className={s.avatar} src={avatar}/>
+                <img className={s.avatar} src={avatar} alt={''}/>
             </div>
     )
 }

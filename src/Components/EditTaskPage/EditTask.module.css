@@ -1,0 +1,145 @@
+.wrapper {
+    position: absolute;
+    top: 65px;
+    left: 625px;
+    width: 975px;
+    height: 665px;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 1.5px rgba(0,0,0,0.25));
+    background-color: #ecf3f7;
+}
+
+.header {
+    width: 915px;
+    height: 60px;
+    filter: drop-shadow(0 0 1.5px rgba(0,0,0,0.25));
+    background-color: #1a4876;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px 0 30px;
+}
+
+.title {
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 20px;
+    color: #ffffff;
+    font-family: "Myriad Pro", sans-serif;
+}
+
+.header img {
+    filter: invert(100%);
+}
+
+.header img:hover {
+    cursor: pointer;
+}
+
+
+.content {
+    height: 577px;
+    padding-top: 28px;
+    padding-left: 38px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+.description, .addComment{
+    width: 664px;
+    height: 103px;
+}
+
+.leftSide h1{
+    font-size: 14px;
+    line-height: 18px;
+    color: #060606;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+
+.leftSide h2 {
+    font-size: 14px;
+    line-height: 24px;
+    color: #9f9ea7;
+    font-weight: 300;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.commentForm {
+    width: 625px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: #f9f9fa;
+    border: 1px solid #e8e8e8;
+    resize: none;
+}
+
+.addComment button{
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    width: 130px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #008cf0;
+    border: none;
+    margin-top: 15px;
+}
+
+.rightSide {
+    display: grid;
+    border-left: 1px solid #d7dce0;
+    padding-left: 28px;
+}
+
+.rightTitle{
+    font-size: 14px;
+    line-height: 24px;
+    color: #a09fa8;
+    font-weight: 300;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.rightName{
+    font-size: 14px;
+    line-height: 24px;
+    color: #030303;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.calendar::before{
+    content: '';
+}
+
+.resolutionDatePlan img {
+    border-right: 7px solid transparent;
+}
+
+.tagsList {
+    display: flex;
+    font-size: 12px;
+    color: #9da1aa;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+
+.tag {
+    width: auto;
+    display: inline;
+    margin: 4px;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #9da1aa;
+}
+
+.tag:hover{
+    cursor: pointer;
+}

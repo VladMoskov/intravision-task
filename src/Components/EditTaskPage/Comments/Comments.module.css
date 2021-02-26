@@ -1,0 +1,43 @@
+.wrapper {
+    margin-top: 73px;
+}
+
+.avatar {
+    clip-path: circle(45%);
+}
+
+.name {
+    font-size: 14px;
+    letter-spacing: 0;
+    color: #525460;
+    font-weight: 400;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.createdAt {
+    font-size: 12px;
+    letter-spacing: 0;
+    color: #63677c;
+    font-family: "Corporate ACyr", sans-serif;
+}
+
+.userTitle {
+    margin-left: 11px;
+}
+
+.commentTextWrapper {
+    width: 530px;
+    padding: 10px;
+    min-height: 70px;
+    margin-left: 75px;
+    margin-top: 17px;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 1.5px rgba(0,0,0,0.2));
+    background-color: #e3e9f4;
+}

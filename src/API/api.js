@@ -13,13 +13,19 @@ export const tasksAPI = {
         return instance.get(`odata/tasks?tenantguid=${tenantguid}`)
     },
 
-    postNewTask: (name, description) => {
-        console.log('here');
-        let body = {
-            "name": name,
-            "description": description
-        }
+    getPriorityes: () => {
+        return instance.get(`api/${tenantguid}/Priorities`)
+    },
 
+    getStatuses: () => {
+        return instance.get(`api/${tenantguid}/Statuses`)
+    },
+
+    postNewTask: (body) => {
         return instance.post(`/api/${tenantguid}/Tasks`, body)
+    },
+
+    getTask: (taskID) => {
+        return instance.get(`/api/${tenantguid}/Tasks/${taskID}`)
     }
 }

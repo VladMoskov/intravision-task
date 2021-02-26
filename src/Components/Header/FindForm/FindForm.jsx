@@ -7,7 +7,7 @@ const FindForm = (props) => {
         <form>
             <input className={s.findForm} placeholder='Введите Фамилию, Статус, Приоритет, Тег и т.д. чтобы найти заявки'/>
             <button className={s.findFormButton}>
-                <img src={search}/>
+                <img src={search} alt={''}/>
             </button>
         </form>
     )

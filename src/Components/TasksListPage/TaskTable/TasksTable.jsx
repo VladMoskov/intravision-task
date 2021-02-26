@@ -3,31 +3,29 @@ import s from './TasksTable.module.css';
 import {tasksAPI} from "../../../API/api";
 import Status from "./Status/Status";
 import Preloader from "../../Common/Preloader";
+import {NavLink} from "react-router-dom";
 
 const SingleTask = (props) => {
 
-    let priorityColor;
+    let priority;
+    let status;
 
-    switch (props.task.priorityName) {
-        case 'Средний':
-            priorityColor = '#b32c55';
-            break;
-        case 'Низкий':
-            priorityColor = '#fb9bc8';
-            break;
-        case 'Высокий':
-            priorityColor = '#f75394';
-            break;
-        default:
-            priorityColor = '#fff';
-    }
+    props.priorities.forEach((p) => {
+        if (p.id === props.task.priorityId)
+            priority = p;
+    })
+
+    props.statuses.forEach((s) => {
+        if (s.id === props.task.statusId)
+            status = s;
+    })
 
     return (
         <div className={s.task}>
-            <div className={s.priority} style={{backgroundColor: priorityColor}}/>
+            <div className={s.priority} style={{backgroundColor: priority.rgb}}/>
             <h1>{props.task.id.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')}</h1>
             <h1>{props.task.name}</h1>
-            <Status status={props.task.statusName}/>
+            <Status status={status}/>
             <h1>{props.task.executorName}</h1>
         </div>
     )
@@ -36,7 +34,7 @@ const SingleTask = (props) => {
 
 const TasksTable = (props) => {
 
-    let [tasks, setTasks] = useState();
+    let [tasks, setTasks] = useState('');
 
     useEffect(() => {
         tasksAPI.getTasks()
@@ -55,8 +53,7 @@ const TasksTable = (props) => {
             </div>
 
             <div className={s.taskItemsList}>
-                {tasks ? tasks.map(task => <SingleTask key={task.id}
-                                                       task={task}/>) : <Preloader/>}
+                {tasks ? tasks.map(task => <NavLink key={task.id} to={`/tasks/edit-task/${task.id}`}><SingleTask task={task} {...props}/></NavLink>) : <Preloader/>}
             </div>
 
         </div>

@@ -12,7 +12,7 @@ const CreateTaskPage = (props) => {
 
     let handleSubmit = (e, name, description) => {
         e.preventDefault();
-        tasksAPI.postNewTask(name, description);
+        tasksAPI.postNewTask({name, description});
         setName('');
         setDescription('');
     }
@@ -21,7 +21,7 @@ const CreateTaskPage = (props) => {
         <div className={s.wrapper}>
             <div className={s.header}>
                 <h1 className={s.title}>Новая заявка</h1>
-                <NavLink to='/tasks'><img src={close}/></NavLink>
+                <NavLink to='/tasks'><img src={close} alt={''}/></NavLink>
             </div>
 
             <form className={s.form} onSubmit={handleSubmit}>

@@ -12,6 +12,12 @@ code {
     monospace;
 }
 
+select {
+  background-color: transparent;
+  border: none;
+  appearance: none;
+}
+
 .preloader {
   width: 100%;
   height: 100%;
