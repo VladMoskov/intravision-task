@@ -14,7 +14,7 @@ const saveTask = (props) => {
             ...props.task.lifetimeItems,
             {
                 "comment": props.commentInputValue,
-                "userName": 'Менеджеров Сергей',
+                "userName": props.USER,
                 "createdAt": new Date().toString(),
                 "id": props.task.id + props.task.lifetimeItems.length
             }

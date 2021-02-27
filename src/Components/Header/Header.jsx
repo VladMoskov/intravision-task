@@ -7,7 +7,7 @@ const Header = (props) => {
     return (
         <div className={`header ${s.header}`}>
             <FindForm/>
-            <User/>
+            <User USER={props.USER}/>
         </div>
     )
 }

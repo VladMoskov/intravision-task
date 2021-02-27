@@ -12,7 +12,7 @@ const Comment = (props) => {
             <div className={s.user}>
                 <img className={s.avatar} src={avatar} alt={''}/>
                 <div className={s.userTitle}>
-                    <h3 className={s.name}>Менеджеров Сергей</h3>
+                    <h3 className={s.name}>{props.USER}</h3>
                     <h2 className={s.createdAt}>{time.getDate()} {months[time.getMonth()]}, {time.getHours()}:{time.getMinutes()} прокомментировал</h2>
                 </div>
             </div>
@@ -27,7 +27,7 @@ const Comments = (props) => {
     return (
         <div className={s.wrapper}>
             {props.comments
-                .map(comment => <Comment key={comment.id} commentData={comment}/>)}
+                .map(comment => <Comment USER={props.USER} key={comment.id} commentData={comment}/>)}
         </div>
     )
 }

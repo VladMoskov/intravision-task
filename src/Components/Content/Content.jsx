@@ -22,7 +22,7 @@ const Content = (props) => {
         <div className='content'>
             <Route path={'/tasks'} render={()=> <TasksListPage priorities={priorities} statuses={statuses}/> }/>
             <Route exact path={'/tasks/create-new-task'} render={()=> <CreateTaskPage/> }/>
-            <Route exact path={'/tasks/edit-task/:taskID'} render={()=> <EditTaskContainer statuses={statuses}/> }/>
+            <Route exact path={'/tasks/edit-task/:taskID'} render={()=> <EditTaskContainer USER={props.USER} statuses={statuses}/> }/>
         </div>
     )
 }

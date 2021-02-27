@@ -39,6 +39,7 @@ const EditTask = (props) => {
                     </div>
 
                     <SaveTask
+                        USER={props.USER}
                         task={props.task}
                         setTask={props.setTask}
                         currentStatus={props.currentStatus}
@@ -47,7 +48,7 @@ const EditTask = (props) => {
                         currentExecutor={props.currentExecutor}
                     />
 
-                    <Comments comments={props.task.lifetimeItems}/>
+                    <Comments USER={props.USER} comments={props.task.lifetimeItems}/>
 
                 </div>
 

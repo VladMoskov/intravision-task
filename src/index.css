@@ -11,6 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App{
+  display: grid;
+  grid-template-areas: 'nav head' 'nav con' ;
+  grid-template-columns: 95px 1fr;
+  grid-template-rows: 65px 1fr;
+  width: 1600px;
+  height: 730px;
+}
+
+.navigation{
+  height: 100%;
+  grid-area: nav;
+  background-color: #002137;
+}
+
+.header{
+  grid-area: head;
+  filter: drop-shadow(0 0 3.5px rgba(0,0,0,0.2));
+  background-color: #d1e0ed;
+}
+
+.content{
+  grid-area: con;
+  height: 665px;
+}
 
 select {
   background-color: transparent;
@@ -42,8 +67,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -70,11 +93,6 @@ blockquote, q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
 
 table {
   border-collapse: collapse;
