@@ -22,6 +22,7 @@ const saveTask = (props) => {
     }
 
     let saveTask = () => {
+        props.setTask(task)
         tasksAPI.putTaskChanges({task})
             .then(res => console.log(res))
         props.setCommentInputValue('');
