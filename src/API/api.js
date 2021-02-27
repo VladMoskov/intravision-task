@@ -25,6 +25,14 @@ export const tasksAPI = {
         return instance.post(`/api/${tenantguid}/Tasks`, body)
     },
 
+    putTaskChanges: (body) => {
+        return instance.post(`/api/${tenantguid}/Tasks`, body)
+    },
+
+    getUsers: () => {
+        return instance.get(`api/${tenantguid}/Users`)
+    },
+
     getTask: (taskID) => {
         return instance.get(`/api/${tenantguid}/Tasks/${taskID}`)
     }

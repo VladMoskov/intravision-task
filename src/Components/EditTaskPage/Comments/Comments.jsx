@@ -26,7 +26,8 @@ const Comment = (props) => {
 const Comments = (props) => {
     return (
         <div className={s.wrapper}>
-            {props.comments.map(comment => <Comment key={comment.id} commentData={comment}/>)}
+            {props.comments
+                .map(comment => <Comment key={comment.id} commentData={comment}/>)}
         </div>
     )
 }

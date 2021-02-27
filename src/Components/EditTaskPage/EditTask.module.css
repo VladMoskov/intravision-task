@@ -42,13 +42,29 @@
     padding-top: 28px;
     padding-left: 38px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
 }
 
 
 .description, .addComment{
     width: 664px;
     height: 103px;
+}
+
+.leftSide {
+    max-height: 577px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.leftSide::-webkit-scrollbar {
+    width: 6px;
+    background-color: #d1e0ed;
+}
+
+.leftSide::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: #bcccd7;
 }
 
 .leftSide h1{

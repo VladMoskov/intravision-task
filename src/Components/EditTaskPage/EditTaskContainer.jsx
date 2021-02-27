@@ -10,15 +10,50 @@ const EditTaskContainer = (props) => {
     let params = useParams();
 
     let [task, setTask] = useState(null);
+    let [executors, setExecutors] = useState(null);
+
+    let [currentStatus, setCurrentStatus] = useState(null);
+    let [currentExecutor, setCurrentExecutor] = useState(null);
+
+    useEffect(() => {
+        tasksAPI.getTask(params.taskID)
+            .then(res => setTask(res.data));
+
+        tasksAPI.getUsers()
+            .then(res => setExecutors(res.data))
+    }, [params.taskID])
 
     useEffect(()=> {
-        tasksAPI.getTask(params.taskID)
-            .then(res => setTask(res.data))
-    },[params.taskID])
+        props.statuses.forEach(stat => {
+            if (task && task.statusId === stat.id)
+                setCurrentStatus(stat);
+        })
+    }, [props.statuses, task])
+
+    useEffect(()=> {
+        if (executors) {
+            executors.forEach(executor => {
+                if (task && task.executorId === executor.id)
+                    setCurrentExecutor(executor);
+            })
+        }
+    }, [executors, task])
 
     return (
         <div className={s.wrapper}>
-            {task ? <EditTask {...props} task={task}/> : <Preloader/>}
+            {task && currentStatus && executors && currentExecutor
+                ? <EditTask
+                    {...props}
+                    task={task}
+                    setTask={setTask}
+                    executors={executors}
+                    currentStatus={currentStatus}
+                    setCurrentStatus={setCurrentStatus}
+                    currentExecutor={currentExecutor}
+                    setCurrentExecutor={setCurrentExecutor}
+                />
+                : <Preloader/>
+            }
         </div>
     )
 }

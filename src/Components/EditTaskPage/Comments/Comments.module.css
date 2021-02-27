@@ -1,9 +1,11 @@
-.wrapper {
-    margin-top: 73px;
-}
+
 
 .avatar {
     clip-path: circle(45%);
+}
+
+.singleComment {
+    height: 180px;
 }
 
 .name {

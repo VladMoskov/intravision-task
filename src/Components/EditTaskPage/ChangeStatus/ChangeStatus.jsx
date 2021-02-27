@@ -1,21 +1,22 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from './ChangeStatus.module.css'
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 
 const ChangeStatus = (props) => {
 
-    let [status, setStatus] = useState({name: props.statusName});
-
     let handleChange = (e) => {
-        setStatus(e.target.value)
+        props.statuses.forEach(stat => {
+            if (stat.name === e.target.value) {
+                props.setCurrentStatus(stat);
+            }
+        })
     }
-    console.log(status)
 
     return (
         <div className={s.wrapper}>
             <Select
-                value={status.name}
+                value={props.currentStatus.name}
                 onChange={handleChange}
             >
                 {props.statuses.map(stat => {
