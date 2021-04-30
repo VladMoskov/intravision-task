@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 24" width="26" height="24">
+	<defs>
+		<image width="64" height="64" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfhBQsJLQ+xaRYHAAACPElEQVRo3u3Zu08UURTA4W956G7kTYjBR4j+AcZXaEwMBSaWlCod2tAZG2JngY02hsTOmBiVmNBYG+wk2WhnIVSoiS8aEAgqiI6Fy7CEZd2F3RmEPZts5tyZc89vzpx775k77HZJSOp1yb4YfC8Y9phBQYy/wYQv9uvzOYYItLtvikAgGYN7kgJBVSyus6QCUAGoKclNtElkjr+ZK9Z868NwLGtiWdZTsF3JhuEpzJk1a1G148UZlyoHOjRpcqd4w/8uCZv1qw+1Uc+jBuhzM0u7oi1qgHqMGUXSQFYsIgOAF26gycDW3W/7JLzmbHj81fVylC35AGrdXhOhV+5GC1CtChfBZd1qS+++kCR8Arp0l8P9NkjC8gCcNp21Qj6LHuCM5iztnL1RAyRwT0pKKtQ3kFJURLnllx+FXLZDk7ACUAEoQv49DN+B1qyWfhfWob/2mzXTT6/zWwVYNOmojowWmMA4GjRk2t5k/k84HFqNY0KgTl2mZdLixk4SAqQ2mDRSoXtmM+XIwbASDLy1hD2OhHPdvI+gXWNo+d73nL0n/7bv9h2S1Rw4pKeMK8NaWfbUhxVl5RGMRLo9N7LyCFbv+ZapCCPwYFXZ7UlYAYgdoMa8eid9isH3AcwzFOt2/VBCq6tFfbCo1eKn6RxnWtSasVRwTwuGN7Ot1SWQznkmLdBVbHexJ2EFoAIQO0D+CqBZ57pX62NozFlyN6Jz3dIeeGlms3jpksx26Xwu8kfgoaAEUX5Ugj52sPwBZMFQuiStTSsAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMDUtMTFUMDk6NDU6MTUrMDI6MDDtGuN7AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTA1LTExVDA5OjQ1OjE1KzAyOjAwnEdbxwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="header">
+		<g id="Меню ">
+			<g id="Активы">
+				<use id="analytics" href="#img1" transform="matrix(0.406,0,0,0.406,0,-1)"/>
+			</g>
+		</g>
+	</g>
+</svg>

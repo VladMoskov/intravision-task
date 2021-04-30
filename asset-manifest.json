@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/intravision-task-from-intenet/static/css/main.a19f0a91.chunk.css",
+    "main.js": "/intravision-task-from-intenet/static/js/main.f10cc89d.chunk.js",
+    "main.js.map": "/intravision-task-from-intenet/static/js/main.f10cc89d.chunk.js.map",
+    "runtime-main.js": "/intravision-task-from-intenet/static/js/runtime-main.603e2a6f.js",
+    "runtime-main.js.map": "/intravision-task-from-intenet/static/js/runtime-main.603e2a6f.js.map",
+    "static/js/2.839af5be.chunk.js": "/intravision-task-from-intenet/static/js/2.839af5be.chunk.js",
+    "static/js/2.839af5be.chunk.js.map": "/intravision-task-from-intenet/static/js/2.839af5be.chunk.js.map",
+    "static/js/3.f95fbbdb.chunk.js": "/intravision-task-from-intenet/static/js/3.f95fbbdb.chunk.js",
+    "static/js/3.f95fbbdb.chunk.js.map": "/intravision-task-from-intenet/static/js/3.f95fbbdb.chunk.js.map",
+    "index.html": "/intravision-task-from-intenet/index.html",
+    "static/css/main.a19f0a91.chunk.css.map": "/intravision-task-from-intenet/static/css/main.a19f0a91.chunk.css.map",
+    "static/js/2.839af5be.chunk.js.LICENSE.txt": "/intravision-task-from-intenet/static/js/2.839af5be.chunk.js.LICENSE.txt",
+    "static/media/analytics.29825213.svg": "/intravision-task-from-intenet/static/media/analytics.29825213.svg",
+    "static/media/avatarsvg.3527a0fe.svg": "/intravision-task-from-intenet/static/media/avatarsvg.3527a0fe.svg",
+    "static/media/calendar.70baf16f.svg": "/intravision-task-from-intenet/static/media/calendar.70baf16f.svg",
+    "static/media/clients.0759eab3.svg": "/intravision-task-from-intenet/static/media/clients.0759eab3.svg",
+    "static/media/close.c46f72ba.svg": "/intravision-task-from-intenet/static/media/close.c46f72ba.svg",
+    "static/media/database.a0fac14b.svg": "/intravision-task-from-intenet/static/media/database.a0fac14b.svg",
+    "static/media/logo.aa716609.svg": "/intravision-task-from-intenet/static/media/logo.aa716609.svg",
+    "static/media/people.42720fc1.svg": "/intravision-task-from-intenet/static/media/people.42720fc1.svg",
+    "static/media/preloader.56a6d21e.svg": "/intravision-task-from-intenet/static/media/preloader.56a6d21e.svg",
+    "static/media/search.c18d7ddd.svg": "/intravision-task-from-intenet/static/media/search.c18d7ddd.svg",
+    "static/media/settings.b92000e5.svg": "/intravision-task-from-intenet/static/media/settings.b92000e5.svg",
+    "static/media/tasks.1f8dc0d3.svg": "/intravision-task-from-intenet/static/media/tasks.1f8dc0d3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.603e2a6f.js",
+    "static/js/2.839af5be.chunk.js",
+    "static/css/main.a19f0a91.chunk.css",
+    "static/js/main.f10cc89d.chunk.js"
+  ]
+}
