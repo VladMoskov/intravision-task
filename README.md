@@ -1,1 +1,1 @@
-https://vladmoskov.github.io/intravision-task-from-intenet/
+https://vladrassokhyn.github.io/intravision-task-from-intenet/
